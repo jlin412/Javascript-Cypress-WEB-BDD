@@ -1,0 +1,31 @@
+{
+    "video": false,
+    "defaultCommandTimeout": 6000,
+    "pageLoadTimeout": 10000,
+    "ignoreTestFiles":["*,js","*.md"],
+    "testFiles": "**/*.feature",
+    "execTimeout":6000,
+    "requestTimeout":15000,
+    "responseTimeout":15000,
+    "watchForFilesChanges":false,
+    "chromeWebSecurity":false,
+    "waitForAnimation":true,
+    "animationDistanceTreshold":20,
+    "projectId": "empty",
+    "env": {
+        "url": "http://site-url/",
+        "admin_username": "",
+        "admin_password": ""
+      },
+    "reporter":"mochawesome",
+    "reporterOptions":{
+        "reportDir":"cypress/reports",
+        "overwrite":true,
+        "html":true,
+        "json":true
+    },
+    "retries": {
+          "runMode": 2,
+          "openMode": 1
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Javascript-Cypress-WEB-BDD",
+  "version": "1.0.0",
+  "description": "Demo test automation solution builded with Cypress for webUI with BDD",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:tests": "cypress run",
+    "cy:dash": "cypress run --record --key here_goes_a_valid_key"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodolfofernandezQA/Javascript-Cypress-WEB-BDD.git"
+  },
+  "author": "rodolfofernandezQA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodolfofernandezQA/Javascript-Cypress-WEB-BDD/issues"
+  },
+  "homepage": "https://github.com/rodolfofernandezQA/Javascript-Cypress-WEB-BDD#readme",
+  "dependencies": {
+    "cypress": "^9.5.4",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.3",
+    "process": "^0.11.10"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

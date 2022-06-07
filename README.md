@@ -1,6 +1,10 @@
 # Javascript-Cypress-WEB-BDD
 Test automation solution template builded with Cypress, BDD 
 
+### IMPORTANT
+
+Due new Cypress big update -> v10, cucumber plugin no longer work, unless yuo modify the ```node_modules\cypress-cucumber-preprocessor\lib\stepDefinitionPath.js``` file from  ```cypress${path.sep}integration`;```  to  ```cypress${path.sep}e2e`;``` in order to tests been able to run again.
+
 ### Technologies used:
 
 ***Cypress*** - Cypress is a next generation front end testing tool built for the modern web. We address the key pain points developers and QA engineers face when testing modern applications.
@@ -55,11 +59,16 @@ Just download this repo and run ```npm install``` that npm will read _package.js
 # Mochawesome setup
 
 ```
-"reporter":"mochawesome",
-"reporterOptions":{
-   "reportDir":"cypress/reports",
-   "overwrite":true,
-   "html":true,
-   "json":true
-}
+reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    reportFileName: '[status]_[datetime]-[name]-report',
+    timestamp: 'longDate',
+    charts: 'true',
+    code: 'true',
+    quiet:'true',
+    overwrite: true,
+    html: true,
+    json: true,
+  }
 ```

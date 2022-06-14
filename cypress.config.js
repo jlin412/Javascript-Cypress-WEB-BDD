@@ -13,9 +13,9 @@ module.exports = defineConfig({
   animationDistanceTreshold: 20,
   projectId: 'empty',
   env: {
-    url: '',
-    admin_username: '',
-    admin_password: '',
+    url: 'http://localhost:81/wordpress/wp-login.php',
+    admin_username: 'rodolfo',
+    admin_password: 'secreta1234',
   },
   reporter: 'mochawesome',
   reporterOptions: {

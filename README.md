@@ -1,5 +1,5 @@
 # Javascript-Cypress-WEB-BDD
-Test automation solution template builded with Cypress, BDD 
+Test automation solution template builded with Cypress, BDD
 
 ### IMPORTANT
 
